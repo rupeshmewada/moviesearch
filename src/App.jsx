@@ -29,10 +29,10 @@ function App() {
   return (
     <>
       <div className='container flex flex-col gap-10'>
-        <h1 className='font-extrabold text-8xl ' >Movies</h1>
+        <h1 className='font-extrabold text-5xl lg:text-8xl md:text-8xl ' >Movies</h1>
 
-        <div className='bg-gray-700  w-1/3 m-auto p-5 rounded-xl gap-2 flex flex-col flex-wrap items-center md:flex-row'>
-          <input className='bg-gray-700 text-white  m-auto  w-16 md:w-[11rem] lg:w-48 lg:border-black ' type="text" placeholder='Enter movie name here' value={search} onChange={(e) => { setSearch(e.target.value) }} />
+        <div className='bg-gray-700  w-1/3 m-auto p-5 rounded-xl gap-2 flex flex-col  flex-wrap items-center md:flex-row'>
+          <input className='bg-gray-700 border  text-white  w-[90%] ' type="text" placeholder='Enter movie name here' value={search} onChange={(e) => { setSearch(e.target.value) }} />
 
           <i className="fa-solid fa-magnifying-glass  w-5" onClick={() => searchMovie(search)}><img src={searchimg} alt="" /></i>
         </div>
